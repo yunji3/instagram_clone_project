@@ -20,13 +20,12 @@ body {
 /*nav*/
 nav {
     width: 100%;
-    height: 70px;
+    height: 65px;
     position: fixed;
     display: flex;
     justify-content: center;
-    background-color: white;
-    border-bottom: 1px solid #DBDBDB;
     z-index: 1;
+    background-image: linear-gradient(to left, #7028e4 0%, #e5b2ca 100%);
 }
 
 .nav-container {
@@ -51,16 +50,10 @@ nav img {
     cursor: pointer;
 }
 
-/*.vl {*/
-/*    height: 22px;*/
-/*    margin: 0 10px;*/
-/*    border-left: 1px solid #262626;*/
-/*}*/
-
 .logo_instagram_txt {
-    height: 30px;
+    height: 32px;
     padding-left: 16px;
-    border-left: 1px solid #262626;
+    border-left: 2px solid #262626;
 }
 
 .nav-2 img {
@@ -201,24 +194,8 @@ article {
 }
 
 article {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
-
-/*.section-story, .section-recommend {*/
-/*    width: 310px;*/
-/*    padding: 14px 16px;*/
-/*    overflow-y: hidden;*/
-/*}*/
-
-/*.section-story {*/
-/*    height: 212px;*/
-/*    margin-bottom: 20px;*/
-/*    overflow-y: auto;*/
-/*}*/
-
-/*.section-recommend {*/
-/*    height: 180px;*/
-/*}*/
 
 /* article */
 .header {
@@ -268,11 +245,13 @@ article {
     height: 24px;
     cursor: pointer;
 }
-button{
+
+button {
     border: 0;
     outline: 0;
-    background-color:transparent;
+    background-color: transparent;
 }
+
 .icons-left {
     display: flex;
     align-items: center;
@@ -309,10 +288,6 @@ button{
     font-size: 14px;
 }
 
-/*span.at-tag {*/
-/*    color: #00376B;*/
-/*}*/
-
 ul.comments {
     margin-top: -30px;
 }
@@ -335,7 +310,7 @@ ul.comments li:hover {
 }
 
 div.time-log {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 div.time-log span {
@@ -352,12 +327,19 @@ div.time-log span {
 /* comment input */
 .input-comment {
     font-size: 14px;
-    width: 560px;
+    width: 500px;
     height: 18px;
     padding: 28px 16px;
     border-style: none;
     box-sizing: border-box;
     color: #262626;
+}
+
+.input-comment-emoji {
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+    cursor: pointer;
 }
 
 .input-comment:focus {
@@ -406,9 +388,9 @@ button.submit-comment:focus {
 }
 
 .side-menu__user-avatar {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
+    width: 51px;
+    height: 50px;
+    /*border-radius: 50%;*/
 
     margin-right: 12px;
     flex-shrink: 0;
@@ -425,7 +407,7 @@ button.submit-comment:focus {
     left: 0;
     right: 0;
 
-    border: 1px solid #F5F5F5;
+    border: 2px solid black;
     border-radius: 50%;
 }
 
@@ -481,13 +463,15 @@ button.submit-comment:focus {
 .side-menu__suggestions-header {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+
 }
 
 .side-menu__suggestions-header h2 {
     font-size: 14px;
-    font-weight: 500;
-    color: #8e8e8e;
     font-weight: bold;
+    color: #8e8e8e;
+
 }
 
 .side-menu__suggestions-header button {
@@ -696,8 +680,6 @@ button.submit-comment:focus {
 
     /* 피드 댓글 목록*/
     .feed-repl-wrap {
-        /*border-bottom: 1px solid #efefef;*/
-        /*padding: 0px 30px 16px 16px;*/
         font-size: 14px;
         letter-spacing: -0.3px;
     }
@@ -731,6 +713,7 @@ button.submit-comment:focus {
         font-size: 12px;
         padding-left: 3px;
         color: #c7c7c7;
+        cursor: pointer;
     }
 
     .feed-repls > span {
@@ -766,6 +749,12 @@ button.submit-comment:focus {
 
     .mention {
         margin-right: 5px;
+        color: #8e8e8e;
+    }
+
+    .mention2 {
+        margin-right: 5px;
+        margin-bottom: 15px;
         color: #8e8e8e;
     }
 
@@ -863,25 +852,27 @@ button.submit-comment:focus {
     audio {
         display: block;
         margin: 20px auto;
+
     }
 
+    /*모달창*/
     .modal {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.5);
         top: 0;
         left: 0;
         display: none;
     }
 
     .modal_content {
-        width: 400px;
-        height: 200px;
+        width: 350px;
+        height: 310px;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 15px;
         position: relative;
-        top: 50%;
+        top: 47%;
         left: 50%;
         margin-top: -100px;
         margin-left: -200px;
@@ -891,4 +882,5 @@ button.submit-comment:focus {
         line-height: 23px;
         cursor: pointer;
     }
+
 }
