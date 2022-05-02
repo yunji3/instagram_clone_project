@@ -699,6 +699,11 @@ button.submit-comment:focus {
 
     a:visited {
         color: black;
+
+    }
+
+    .all-repl {
+        cursor: pointer;
     }
 
     .feed-repl-wrap a.user-id {
@@ -713,7 +718,7 @@ button.submit-comment:focus {
         font-size: 12px;
         padding-left: 3px;
         color: #c7c7c7;
-        cursor: pointer;
+
     }
 
     .feed-repls > span {
